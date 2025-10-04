@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # external apps
     'rest_framework',
     'django_seed',
+    #'django.contrib.staticfiles',
+    'drf_yasg',
 
     # local apps
     'listings',
@@ -128,4 +130,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'listings.User'
-

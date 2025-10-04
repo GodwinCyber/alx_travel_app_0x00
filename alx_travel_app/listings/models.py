@@ -93,6 +93,8 @@ class Booking(models.Model):
     status = models.CharField(max_length=10, choices=BOOKING_STATUS.choices, default=BOOKING_STATUS.PENDING)
     check_in = models.DateField()
     check_out = models.DateField()
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True)
 
